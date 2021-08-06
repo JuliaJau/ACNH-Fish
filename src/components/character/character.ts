@@ -1,16 +1,16 @@
-import './character.css';
+import style from './character.module.css';
 import { createElement } from '../../utils/createElement';
 
 export function createCharacterCard(): HTMLElement {
   return createElement('div', {
-    className: 'character-card',
+    className: style.card,
     childElements: [
       createElement('img', {
-        className: 'character-card__image',
+        className: style.image,
         src: 'https://acnhapi.com/v1/images/fish/1',
       }),
       createElement('article', {
-        className: 'character-card__info',
+        className: style.info,
         childElements: [
           createElement('h2', { innerText: 'Bitterling' }),
           createElement('div', {
