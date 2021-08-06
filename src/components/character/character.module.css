@@ -1,0 +1,10 @@
+.card {
+  background: #000435;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr auto;
+}
+
+.img {
+  height: inherit;
+}

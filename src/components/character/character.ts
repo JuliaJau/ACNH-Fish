@@ -6,7 +6,7 @@ export function createCharacterCard(): HTMLElement {
     className: style.card,
     childElements: [
       createElement('img', {
-        className: style.image,
+        className: style.img,
         src: 'https://acnhapi.com/v1/images/fish/1',
       }),
       createElement('article', {
