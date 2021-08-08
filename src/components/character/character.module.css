@@ -1,13 +1,49 @@
 .card {
-  background: #000435;
+  background: #fff;
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr;
-  border-radius: 1em;
+  grid-auto-flow: row;
+  grid-template-rows: 1fr 2fr;
+  border-radius: 0.5em;
   padding: 2em;
   margin-top: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
 }
 
-.img {
+.image {
   height: inherit;
+  width: 100%;
+}
+
+.info {
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  color: black;
+}
+
+@media (max-width: 500px) {
+  .card {
+    height: auto;
+    padding: 1em;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+  }
+
+  .image {
+    height: auto;
+    width: 80%;
+    border-radius: 50%;
+  }
+
+  .info {
+    text-align: center;
+    width: 100%;
+  }
+
+  .info * {
+    margin: 0.2em;
+  }
 }

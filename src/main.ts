@@ -17,7 +17,7 @@ const characterContainer = createElement('div', {
 
 const searchBar = createElement('input', {
   className: 'searchBar',
-  placeholder: 'Search your fish',
+  placeholder: 'Find your fish',
 });
 
 searchBar.oninput = () => {
@@ -36,8 +36,11 @@ searchBar.oninput = () => {
 
 const mainElement = createElement('main', {
   childElements: [
-    createElement('h1', { innerText: 'Animal Crossing: New Horizons' }),
-    createElement('h2', { innerText: 'Fish Characters' }),
+    createElement('div', {
+      className: 'header',
+    }),
+
+    createElement('h2', { innerText: 'Fish your fish' }),
     searchBar,
     characterContainer,
   ],
