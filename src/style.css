@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap');
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   height: 100vh;
-  background-color: rgb(181, 236, 255);
+  background-color: rgb(237, 237, 237);
 }
 
 #app {
-  font-family: 'Overlock', cursive;
+  font-family: 'Teko', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -20,11 +21,8 @@ body {
   height: 100%;
 }
 
-h1 {
-  color: #000;
-}
-
 h2 {
+  margin: 0.5em;
   color: rgb(56, 57, 40);
   font-size: 4em;
 }
@@ -38,7 +36,7 @@ input {
 
 .characterContainer {
   padding: 2em;
-  grid-gap: 2em;
+  grid-gap: 1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }

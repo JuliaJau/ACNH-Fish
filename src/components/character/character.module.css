@@ -3,7 +3,7 @@
   display: grid;
   grid-auto-flow: row;
   grid-template-rows: 1fr 2fr;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   padding: 2em;
   margin-top: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
@@ -12,15 +12,37 @@
 .image {
   height: inherit;
   width: 100%;
+  margin: 0;
+  background-color: rgb(232, 248, 255);
+  border-radius: 50em;
 }
 
 .info {
-  text-align: center;
+  text-align: left;
+}
+
+h3 {
+  color: rgb(255, 138, 36);
+  font-size: 2em;
+  border-bottom-style: solid;
+  border-color: rgb(239, 239, 239);
+  border-width: 0.1em;
+}
+
+h5 {
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-top: 0.5em;
+  margin-bottom: 0;
 }
 
 p {
-  font-size: 1.2em;
-  color: black;
+  font-size: 2.2em;
+  color: rgb(0, 1, 43);
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1em;
+  line-height: 1.2em;
 }
 
 @media (max-width: 500px) {

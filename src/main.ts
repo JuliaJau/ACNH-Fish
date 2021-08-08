@@ -40,7 +40,7 @@ const mainElement = createElement('main', {
       className: 'header',
     }),
 
-    createElement('h2', { innerText: 'Fish your fish' }),
+    createElement('h2', { innerText: 'FISH YOUR FISH' }),
     searchBar,
     characterContainer,
   ],
