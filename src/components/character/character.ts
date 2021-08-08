@@ -13,7 +13,7 @@ export function createCharacterCard({
     className: style.card,
     childElements: [
       createElement('img', {
-        className: style['card__image'],
+        className: style.image,
         src: thumbnail,
       }),
       createElement('article', {
