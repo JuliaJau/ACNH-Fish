@@ -1,13 +1,50 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
+
 body {
   margin: 0;
   height: 100vh;
+  background-color: rgb(237, 237, 237);
 }
 
-h1 {
-  color: #000;
+#app {
+  font-family: 'Teko', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: black;
+  height: 100%;
+}
+
+h2 {
+  margin: 0.5em;
+  color: rgb(56, 57, 40);
+  font-size: 4em;
+}
+
+input {
+  padding: 1em;
+  margin-top: 1 em;
+  border: none;
+  font-size: 1em;
+}
+
+.characterContainer {
+  padding: 2em;
+  grid-gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+.header {
+  height: 400px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://png2.cleanpng.com/sh/97efe09dce75661d17852da5d9da02e4/L0KzQYm4UcI1N5h5hJH0aYP2gLBuTfFvcZ5mhJ9scnB2g7r1h71vbagyhNdqZj3vf7j2TfJzaZ9pRdh4boSwgMP2hQVkfF46etgDZnS3cYO8VckxQV86TqoCMUW0QIK8VMMxPGU5Sqg6NUOxgLBu/kisspng-animal-crossing-new-leaf-logo-brand-font-product-5bf8fd4a255909.568715101543044426153.png);
 }
